@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/main/static/css/main.9e43f390.css",
+    "main.js": "/main/static/js/main.c1cbc4e2.js",
+    "static/media/kadyrbek.jpg": "/main/static/media/kadyrbek.db77729803f989c91630.jpg",
+    "index.html": "/main/index.html",
+    "main.9e43f390.css.map": "/main/static/css/main.9e43f390.css.map",
+    "main.c1cbc4e2.js.map": "/main/static/js/main.c1cbc4e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e43f390.css",
+    "static/js/main.c1cbc4e2.js"
+  ]
+}
