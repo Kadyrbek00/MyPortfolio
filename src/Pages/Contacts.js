@@ -8,7 +8,7 @@ import { TextField, Button } from "@mui/material"
 import SendIcon from '@mui/icons-material/Send';
 import { motion } from "framer-motion";
 
-function Contact({ toggle }) {
+export default function Contact({ toggle }) {
 
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
@@ -18,15 +18,15 @@ function Contact({ toggle }) {
 
     const onSubmit = (e) => {
         e.preventDefault()
-        emailjs.sendForm('Kadyrbek06', 'template_3bv1ix9', ref.current, 'eSJWlpw5-OQN0IEE4')
+        emailjs.sendForm('service_pqye58d', 'template_3bv1ix9', ref.current, 'eSJWlpw5-OQN0IEE4')
     }
+
 
     return (
         <div className="Contact__container" id="Contacts">
 
             <div className="container">
                 <h1>Say Hello</h1>
-
                 <form ref={ref} onSubmit={onSubmit} className="contact" autoComplete="off">
                     <div className="container_input">
                         <TextField
@@ -40,6 +40,7 @@ function Contact({ toggle }) {
                             focused
                         />
                     </div>
+
                     <div className="container_input">
                         <TextField
                             className="input"
@@ -62,7 +63,7 @@ function Contact({ toggle }) {
                             multiline
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
-                            name="Message"
+                            name="message"
                             focused
                             rows={4}
                         />
@@ -77,22 +78,22 @@ function Contact({ toggle }) {
 
             <div className="contact_wrapper">
                 <div className="link_icons">
-                    <motion.div whileHover={{ scale: 1.1, y: -5,}}>
+                    <motion.div whileHover={{ scale: 1.1, y: -5, }}>
                         <a href="https://www.instagram.com/mamatkasymow/">
                             <FiInstagram style={{ color: '#8D41A9', fontSize: '44px' }} />
                         </a>
                     </motion.div>
-                    <motion.div whileHover={{ scale: 1.1, y: -5,}}>
+                    <motion.div whileHover={{ scale: 1.1, y: -5, }}>
                         <a href="https://wa.me/702262005">
                             <BsWhatsapp style={{ color: '#5BEF77', fontSize: '44px' }} />
                         </a>
                     </motion.div>
-                    <motion.div whileHover={{ scale: 1.1, y: -5,}}>
+                    <motion.div whileHover={{ scale: 1.1, y: -5, }}>
                         <a href="https://t.me/mamatkasymow">
                             <BsTelegram style={{ color: '#27A0DE', fontSize: '44px' }} />
                         </a>
                     </motion.div>
-                    <motion.div whileHover={{ scale: 1.1, y: -5,}}>
+                    <motion.div whileHover={{ scale: 1.1, y: -5, }}>
                         <a href="https://github.com/Kadyrbek00">
                             <VscGithub style={!toggle ? { color: "#fff", fontSize: '44px' } : { color: '#000', fontSize: '44px' }} />
                         </a>
@@ -105,5 +106,3 @@ function Contact({ toggle }) {
 
     )
 }
-
-export default Contact

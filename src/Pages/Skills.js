@@ -7,67 +7,72 @@ import { IoLogoJavascript } from "react-icons/io"
 import { BsFillBootstrapFill, BsFillGrid1X2Fill } from "react-icons/bs"
 import "../Styles/Skills/skills.css"
 
-function Skills({ track, trackstate }) {
+export default function Skills({ track, trackstate }) {
 
     return (
         <div className="Skill__container" id="Skills">
             <h1>Skills</h1>
             <div className="container">
                 <div className="icons">
-                    <AiFillHtml5 className="icon" style={{ color: '#F25320'}} />
+                    <AiFillHtml5 className="icon" style={{ color: '#F25320' }} />
                     <p>HTML5</p>
                 </div>
 
                 <div className="icons">
-                    <DiCss3 className="icon" style={{ color: '#016BB1'}} />
+                    <DiCss3 className="icon" style={{ color: '#016BB1' }} />
                     <p>CSS3</p>
                 </div>
 
                 <div className="icons">
-                    <IoLogoJavascript className="icon" style={{ color: '#EAD41C'}} />
+                    <IoLogoJavascript className="icon" style={{ color: '#EAD41C' }} />
                     <p>JavaScript</p>
                 </div>
 
                 <div className="icons">
-                    <FaReact className="icon" style={{ color: '#00CDF2'}} />
+                    <FaReact className="icon" style={{ color: '#00CDF2' }} />
                     <p>React</p>
                 </div>
 
                 <div className="icons">
-                    <SiRedux className="icon" style={{ color: '#7853B8'}} />
+                    <FaReact className="icon" style={{ color: '#00CDF2' }} />
+                    <p>React Native</p>
+                </div>
+
+                <div className="icons">
+                    <SiRedux className="icon" style={{ color: '#7853B8' }} />
                     <p>Redux</p>
                 </div>
 
                 <div className="icons">
-                    <DiSass className="icon" style={{ color: '#C36292'}} />
+                    <DiSass className="icon" style={{ color: '#C36292' }} />
                     <p>SASS</p>
                 </div>
 
                 <div className="icons">
-                    <SiMaterialui className="icon" style={{color: '#016BB1'}} />
+                    <SiMaterialui className="icon" style={{ color: '#016BB1' }} />
                     <p>Material UI</p>
                 </div>
                 <div className="icons">
-                    <SiFramer className="icon" style={{color: '#e900af'}} />
+                    <SiFramer className="icon" style={{ color: '#e900af' }} />
                     <p>Framer Motion</p>
                 </div>
 
                 <div className="icons">
-                    <BsFillGrid1X2Fill className="icon" style={{ color: '#6237AE'}} />
+                    <BsFillGrid1X2Fill className="icon" style={{ color: '#6237AE' }} />
                     <p>CSSGRID</p>
                 </div>
                 <div className="icons">
-                    <SiReactrouter className="icon" style={{ color: '#ec4545'}} />
+                    <SiReactrouter className="icon" style={{ color: '#ec4545' }} />
                     <p>ReactRouter</p>
                 </div>
 
                 <div className="icons">
-                    <SiJquery className="icon" style={{ color: '#0863A3'}} />
+                    <SiJquery className="icon" style={{ color: '#0863A3' }} />
                     <p>jQuery</p>
                 </div>
 
                 <div className="icons">
-                    <BsFillBootstrapFill className="icon" style={{ color: '#6237AE'}} />
+                    <BsFillBootstrapFill className="icon" style={{ color: '#6237AE' }} />
                     <p>Bootstrap</p>
                 </div>
             </div>
@@ -75,5 +80,3 @@ function Skills({ track, trackstate }) {
         </div>
     )
 }
-
-export default Skills;

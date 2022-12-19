@@ -5,7 +5,7 @@ import "../Styles/Home/home.css"
 
 
 
-function Home({ toggle }) {
+export default function Home({ toggle }) {
 
     const [world, setWorld] = useState("Hello")
     const [web, setWeb] = useState("I am")
@@ -18,7 +18,7 @@ function Home({ toggle }) {
                     <motion.h1 className="red" whileHover={{ x: 100, transition: { type: 'spring', stiffness: 100 } }} onHoverStart={() => setWorld("World")} onHoverEnd={() => setWorld("Hello")}>{world}</motion.h1>
 
                     <motion.h1 onHoverStart={() => setWeb("Web")} whileHover={{ x: 100, transition: { type: 'spring', stiffness: 100 } }} onHoverEnd={() => setWeb("I am")}>{web}</motion.h1>
-                    
+
                     <motion.h1 onHoverStart={() => setDeveloper("Developer")} whileHover={{ x: 100, transition: { type: 'spring', stiffness: 100 } }} onHoverEnd={() => setDeveloper("Kadyrbek")}>{developer}</motion.h1>
                 </div>
                 <div className="icon">
@@ -29,5 +29,3 @@ function Home({ toggle }) {
         </div>
     );
 }
-
-export default Home;

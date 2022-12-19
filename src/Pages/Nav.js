@@ -2,10 +2,10 @@ import React from 'react'
 import '../Styles/Nav/nav.css'
 import { motion } from "framer-motion"
 import { Link, } from 'react-scroll'
-import { RiMoonFill} from "react-icons/ri"
+import { RiMoonFill } from "react-icons/ri"
 import { BsSunFill } from "react-icons/bs"
 
-function Nav({ state, toggle, track, trackstate }) {
+export default function Nav({ state, toggle, track, trackstate }) {
     const handleSetActive = (to) => {
         trackstate(to)
     }
@@ -29,10 +29,8 @@ function Nav({ state, toggle, track, trackstate }) {
                 <motion.div initial={{ x: -100, opacity: 0 }} whileHover={{ scale: 1.1, y: -5, }} animate={{ x: 0, opacity: 1, transition: { duration: 1, delay: 0.2 } }}>
                     <Link activeClass="active" to="Contacts" spy={true} smooth={true} offset={-100} duration={500} onSetActive={handleSetActive}>Contacts</Link>
                 </motion.div>
-                <motion.div whileHover={{scale: 1.1, y: -5}} style={{ fontSize: "24px", cursor: "pointer" }} onClick={() => state(!toggle)}>{toggle ? <BsSunFill /> : <RiMoonFill />}</motion.div>
+                <motion.div whileHover={{ scale: 1.1, y: -5 }} style={{ fontSize: "24px", cursor: "pointer" }} onClick={() => state(!toggle)}>{toggle ? <BsSunFill /> : <RiMoonFill />}</motion.div>
             </div>
         </motion.div>
     )
 }
-
-export default Nav
